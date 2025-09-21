@@ -88,4 +88,3 @@ CREATE TABLE `user` (
 ## Notes de sécurité
 
 ⚠️ **ATTENTION :** Cette version utilise des mots de passe en clair pour l'exemple. En production, utilisez des fonctions de hachage sécurisées comme `password_hash()` et `password_verify()`.
-
