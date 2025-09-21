@@ -1,0 +1,19 @@
+Liste des technos utilisées et pourquoi: 
+
+CODE FLASK
+
+-Docker ain de créer un container MySQL pour créer la base de données nécessaire au stockage des données utilisateur, j'ai ensuite créé la BDD nécessaire avec toutes les instructions données en une ligne de commande sur un terminal avec docker. J'y ai inséré un utilisateur test à la fin de la meme manière 
+-Flask Framework python parmi les plus simples de prise en main que j'ai préféré face à Django mais que j'aimerai pour sa part l'apprendre
+ dans le futur
+Flask à la manière d'angular d'une certaine façon m'a permis de créer mon code back-end en python tout en séparant le html dans les dossiers "templates" ce qui rend le code très épuré 
+
+IA Génératives : Cursor et deepseek m'ont guidé dans le développement des codes ainsi que pour la gestion de la BDD et la liaison code-BDD
+ 
+-
+
+
+
+CODE PhP 
+
+-XAMPP pour la configuration du serveur ou sera hébergé ma page PHP avec Apache notamment 
+-Le code utilise la meme base de donnée MySQL que le code Flask

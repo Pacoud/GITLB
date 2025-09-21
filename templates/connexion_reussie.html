@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion Réussie</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_dark.css') }}">
+</head>
+<body>
+    <div class="success-container">
+        <h2>Connexion Réussie</h2>
+        
+        <!-- Affichage des messages flash -->
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="alert alert-{{ category }}">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+        
+        <div class="user-info">
+            <h3>Informations de votre compte :</h3>
+            <div class="info-item">
+                <strong>Nom d'utilisateur :</strong> 
+                {{ user.username }}
+            </div>
+            <div class="info-item">
+                <strong>ID Utilisateur :</strong> 
+                {{ user.user_id }}
+            </div>
+            <div class="info-item">
+                <strong>Email :</strong> 
+                {{ user.user_mail }}
+            </div>
+        </div>
+        
+        <div class="actions">
+            <a href="{{ url_for('logout') }}" class="btn btn-danger">Se déconnecter</a>
+            <a href="{{ url_for('login') }}" class="btn btn-secondary">Retour à la connexion</a>
+        </div>
+    </div>
+</body>
+</html>
